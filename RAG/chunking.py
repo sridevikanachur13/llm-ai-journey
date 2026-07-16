@@ -43,6 +43,7 @@ collection.add(
 query = "Explain react hooks"
 query_embedding = get_embedding(query)
 
+
 results = collection.query(query_embeddings=[query_embedding], n_results=2)
 
 print("\nMost relevant chunks:")
