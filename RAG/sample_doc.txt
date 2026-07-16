@@ -1,0 +1,26 @@
+React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[6][7] that aims to make building user interfaces based on components more "seamless".[6] It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.[8][9][10] According to the 2025 Stack Overflow Developer Survey, React is one of the most commonly used web technologies.
+React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js and React Router. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[12][13] A key advantage of React is that it only re-renders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. React is used by an estimated 6% of all websites.[14]
+
+Features
+Declarative
+React adheres to the declarative programming paradigm.[15][16]: 76  Developers design views for each state of an application, and React updates and renders components when data changes. This is in contrast with imperative programming.[17]
+
+Components
+React code is made of entities called components.[16]: 10–12  These components are modular and can be reused.[16]: 70  React applications typically consist of many layers of components. The components are rendered to a root element in the DOM using the React DOM library. When rendering a component, values are passed between components through props (short for "properties"). Values internal to a component are called its state.[18]
+
+The two primary ways of declaring components in React are through function components and class components.[16]: 118 [19]: 10  Since React v16.8, using function components is the recommended way.
+
+Function components
+Function components, announced at React Conf 2018, and available since React v16.8, are declared with a function that accepts a single "props" argument and returns JSX (JavaScript XML). Function components can use internal state with the useState Hook. [20]
+
+React Hooks
+On February 16, 2019, React 16.8 was released to the public, introducing React Hooks.[20] Hooks are functions that let developers "hook into" React state and lifecycle features from function components.[21] Notably, Hooks do not work inside classes — they let developers use more features of React without classes.[22]
+
+React provides several built-in hooks such as useState,[23][19]: 37  useContext,[16]: 11 [23][19]: 12  useReducer,[16]: 92 [23][19]: 65–66  useMemo[16]: 154 [23][19]: 162  and useEffect.[24][19]: 93–95  Others are documented in the Hooks API Reference.[25][16]: 62  useState and useEffect, which are the most commonly used, are for controlling state[16]: 37  and side effects,[16]: 61  respectively.
+
+Rules of hooks
+There are two rules of hooks[26] which describe the characteristic code patterns that hooks rely on:
+
+"Only call hooks at the top level" — do not call hooks from inside loops, conditions, or nested statements so that the hooks are called in the same order each render.
+"Only call hooks from React functions" — do not call hooks from plain JavaScript functions so that stateful logic stays with the component.
+Although these rules cannot be enforced at runtime, code analysis tools such as linters can be configured to detect many mistakes during development. The rules apply to both usage of Hooks and the implementation of custom Hooks,[27] which may call other Hooks.

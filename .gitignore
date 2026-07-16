@@ -1,2 +1,5 @@
 .env
 node_modules
+chroma_data_gemini/
+chroma_doc_data/
+chroma_data/
