@@ -4,3 +4,4 @@ chroma_data_gemini/
 chroma_doc_data/
 chroma_data/
 chroma_rag_pipeline/
+chroma_langchain_data/
