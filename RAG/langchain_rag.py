@@ -32,7 +32,7 @@ print("Indexed into ChromaDB via LangChain.")
 # ===== STEP 4: RETRIEVAL =====
 retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
-question = "Name few react hooks"
+question = "Tell abcd"
 retrieved_docs = retriever.invoke(question)
 
 print(f"\nRetrieved {len(retrieved_docs)} chunks for: '{question}'")
